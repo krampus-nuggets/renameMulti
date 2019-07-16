@@ -1,6 +1,6 @@
 a=1
-for i in *.jpg; do
-  new=$(printf "%03d Boruto.txt" "$a") #04 pad to length of 4
+for i in *.<extension>; do
+  new=$(printf "%03d <filename>.<extension>" "$a") #03 = Amount of 0 Padding you want to add
   mv -i -- "$i" "$new"
   let a=a+1
 done
