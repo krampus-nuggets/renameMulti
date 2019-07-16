@@ -1,6 +1,0 @@
-a=1
-for i in *.<extension>; do
-  new=$(printf "%03d <filename>.<extension>" "$a") #03 = Amount of 0 Padding you want to add
-  sudo mv -i -- "$i" "$new"
-  let a=a+1
-done
